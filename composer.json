@@ -1,0 +1,28 @@
+{
+    "name": "gabryel/gerenciador_de_projetos",
+    "authors": [
+        {
+            "name": "Garroti",
+            "email": "gabryelmacedo0@gmail.com"
+        }
+    ],
+    "require": {
+        "squizlabs/php_codesniffer": "^3.5",
+        "pimple/pimple": "^3.2",
+        "symfony/http-foundation": "^5.0",
+        "zendframework/zend-eventmanager": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "MVC\\Framework\\": "src"
+        }
+    },
+    "scripts": {
+        "server": "php -S localhost:9000 -t public",
+        "psr1": "vendor/bin/phpcs --standard=PSR1",
+        "psr2": "vendor/bin/phpcs --standard=PSR2"
+    },
+    "config": {
+        "process-timeout": 0
+    }
+}
